@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #222;
+}
+/*Nav bar */
+/*sets width of banner class to take up the whole browser and sets the background colour to a light green */
+/*sets position to fixed so that when you scroll down the nav bar will stay at the top of the webpage */
+/*sets z-index to 10 so it will cover any other elements when you scroll down */
+.banner {
+    width: 100%;
+    background-color: #55d6aa;
+    position: fixed;
+    z-index: 10;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.banner li {
+    margin: 0px;
+    display: inline-block;
+    font-size: 2rem;
+    color: #222;
+    padding: 30px;
+}
+
+.banner a {
+    padding: .banner li;
+    text-decoration: none;
+    margin: 0px
+}
+
+#current-page {
+    background-color: #222;
+    color: white;
+}
+
+.banner a:hover {
+    
+    background-color: #222;
+    color: white;
+}
+.banner ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Header */
+/*
+header {
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+img.book {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 1000px;
+}
+*/
