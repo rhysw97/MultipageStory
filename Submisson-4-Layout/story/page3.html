@@ -3,19 +3,28 @@
     <head>
         <link rel="stylesheet" href="../css/style.css">
         <meta charset="UTF-8">
+           <!--Sets the width and height of the website to the device it is on and display the content of the website at the same scale of the width and height -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Links to font on google fonts so it can be used within the site-->
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
         <title>Multipage Story</title>
     </head>
     <body>
+        <!--Nav element containing unordered list made up of list items containing links to other files within my website (../ signifies moving into the parent directory of the current directory)-->
         <nav class="banner">
             <ul>
+                
                 <li class="homepage"><a href="../index.html" >Homepage</a></li>
                 <li class="current-page"><a href="page3.html">Story</a></li>
                 <li class="about"><a href="../about.html">About</a></li>
                 <li class="links"><a href="../links.html">Useful Links</a></li>
+                <li class="credits"><a href="../credits.html">Credits</a></li>
             </ul>
         </nav>
-        <section id="page-3" class="tell-tale-heart">
+        <figure class="bg-img">
+            <img src="../resources/creepy.jpg" alt="night sky">
+        </figure>
+        <main id="page-3" class="tell-tale-heart">
            
             <p>
                 I bade the gentlemen welcome. The shriek, I said, was my own in a dream. The old man, I mentioned, was absent in the country. I took my visitors all over the house 
@@ -37,6 +46,7 @@
                 <em>"Villains!”</em> I shrieked, <em>“dissemble no more! I admit the deed! Tear up the planks! Here, here! It is the beating of his hideous heart!”</em>
             </p>
         </section>
+        <!--footer element to contain nav buttons-->
         <footer class="nav-buttons">
             <a class="previous" href="page2.html">Previous Page</a>
         </footer>

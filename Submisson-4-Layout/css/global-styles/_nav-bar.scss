@@ -1,0 +1,62 @@
+
+/*========
+  Nav bar 
+  ========*/
+
+/*sets width of banner class to take up the whole browser and sets the background colour to a light green */
+/*sets position to fixed so that when you scroll down the nav bar will stay at the top of the webpage */
+/*sets z-index to 10 so it will cover any other elements when you scroll down */
+.banner {
+    width: 100%;
+    margin: 0 auto;
+    background-color: $accent-colour;
+    position: fixed;
+    z-index: 10;
+
+}
+
+.banner ul {
+    
+    display: flex; /*Removes whitespace between elements*/
+    margin: 0 auto;
+  }
+
+
+.banner li {
+    display: inline-block; /* places list elements on the same line and allows me to set a height and width of the element */
+    font-size: size(regular); /* will resize the font size */
+    width: 25%;
+}
+
+.banner a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;  /* Removes all decoration from the links */
+    text-align: center;
+    color: $primary-colour;
+    box-sizing: border-box;
+    padding: 2rem; /* used to increase the clickable space around the text to activate the link */
+    
+}
+
+.current-page {
+    background-color: $primary-colour;
+
+}
+
+.current-page a{
+    color: white;
+}
+
+/*changes background colour of list item to match the rest of the pages background colour wh */
+.banner li:hover {
+
+    background-color: $primary-colour;     
+
+}
+
+/* selects link child of banner list-item while mouse is hovering and changes the text color to white */ 
+.banner li:hover > a{
+    color: white;
+    
+}

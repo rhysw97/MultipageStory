@@ -3,6 +3,9 @@
     <head>
         <link rel="stylesheet" href="../css/style.css">
         <meta charset="UTF-8">
+        <!--Sets the width and height of the website to the device it is on and display the content of the website at the same scale of the width and height -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Links to font on google fonts so it can be used within the site-->
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
         <title>Multipage Story</title>
     </head>
@@ -14,15 +17,19 @@
                 <li class="current-page"><a href="page1.html">Story</a></li> <!--Links to page1 of story (The current file)-->
                 <li class="about"><a href="../about.html">About</a></li><!--Links to about page (about.html) .. moves to parent of current directory-->
                 <li class="links"><a href="../links.html">Useful Links</a></li><!--Links to -->
+                <li class="credits"><a href="../credits.html">Credits</a></li>
             </ul>
         </nav>
         <!--Header section to contain pages title and -->
-        <header>
-            <h1><strong>The Tell Tale Heart</strong></h1>
-            <p class="author">By Edgar Alan Poe</p>
+        <figure class="bg-img">
+            <img src="../resources/creepy.jpg" alt="night sky">
+        </figure>
+        <header class="story-title">
+            <h1>The Tell Tale Heart</h1>
+            <p class="author"><em>By Edgar Alan Poe</em></p>
         </header>
 
-        <section id="page-1" class="tell-tale-heart">
+        <main id="page-1" class="tell-tale-heart">
             <p> 
                 True!--nervous –dreadfully nervous, I had been and am; but why will you say that I am mad?  Hearken! And observe how calmly I can tell you the whole story.
             </p>
@@ -42,11 +49,13 @@
                 very patiently, I resolved to open a very little crevice in the lantern, until, at length, a single dim ray, like the thread of the spider, shot out and fell upon the
                 vulture eye.
             </p>
-        </section>
-        <footer class="nav-buttons">
+        </main>
+         <!--footer element to contain nav buttons-->
+        <nav id="nav-page-1" class="nav-buttons">
             <a class="next" href="page2.html">Next Page</a>
-        </footer>
-       
-        
+        </nav>
+        <!--Links JavaScript file animation.js to the homepage (moved to bottom of html page so that I can access all elements)-->
+        <script src="../javascript/animation.js"></script>
     </body>
+
 </html>
